@@ -148,7 +148,7 @@ for a in range(len(title_img)):
 			
 			Y = [int(yr) for yr in Y]
 
-			############################### MODIFIED K-MEANS CLUSTERING #############################
+			############################### GROUPING #############################
 
 			black_mat  = [sum(1 for zzz in b )  if gg==1 else float('NaN') for gg,b in groupby(Y)]
 			blackmat_raw = [oneso for oneso in black_mat if str(oneso) != 'nan']
